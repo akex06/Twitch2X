@@ -2,10 +2,24 @@
 A simple script that sends messages from Twitch Channel to Discord Channel
 
 ### Prerequisites
-This is an example of how to list things you need to use the soft
-* npm
+## LINUX
+* python3 pip3
   ```sh
-  npm install npm@latest -g
+  sudo apt install python3
+  sudo apt install python3-pip
+  ```
+* ```sh
+  pip3 install requests
+  pip3 install twitchio
+  ```
+## WINDOWS
+* python3 pip
+  ```sh
+  Go to https://python.org/downloads/ and install latest python version
+  ```
+* ```sh
+  pip install requests
+  pip install twitchio
   ```
 ### Installation
 _Below is an example of how you can instruct your audience on ins
