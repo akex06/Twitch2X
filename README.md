@@ -1,9 +1,6 @@
 # Twitch2Discord
 A simple script that sends messages from Twitch Channel to Discord Channel
 
-## Getting Started
-This is an example of how you may give instructions on setting up
-To get a local copy up and running follow these simple example st
 ### Prerequisites
 This is an example of how to list things you need to use the soft
 * npm
