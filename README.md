@@ -21,19 +21,21 @@ A simple script that sends messages from Twitch Channel to Discord Channel
   pip install requests
   pip install twitchio
   ```
-### Installation
-_Below is an example of how you can instruct your audience on ins
-1. Get a free API Key at [https://example.com](https://example.co
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-<p align="right">(<a href="#top">back to top</a>)</p>
+## USAGE
+Open `constants.py` and change the values of the variables
+* ```py
+    #   DISCORD
+
+    #   CAN BE FOUND IN https://discord.com/developers
+    DISCORD_TOKEN = "TOKEN"
+    API_URL = "https://discord.com/api"
+    #   DISCORD CHANNEL WHERE MESSAGES WILL BE SEND
+    CHANNEL_ID = 000000000000000000
+
+    #   TWITCH
+
+    #   CAN BE GENERATED AT https://twitchtokengenerator.com/
+    TWITCH_TOKEN = "TOKEN"
+    #   TWITCH CHANNEL NAME
+    CHANNEL = ["CHANNEL_NAME"]
+  ```
