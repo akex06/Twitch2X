@@ -5,9 +5,9 @@ from twitchio.ext import commands
 
 class Discord():
     def __init__(self) -> None:
-        self.token = "MTAwMTE3OTg2MDQyNjgyNTgzNA.Gumlv3.yBMoetGpJG937-0qF5h6-fWvL4aXeilNUeFHSk"
+        self.token = "DISCORD_TOKEN"
         self.api_url = "https://discord.com/api"
-        self.channel_id = 927002978911682582
+        self.channel_id = 000000000000000000
 
     async def send_message(self, message: str) -> requests.request:
         """Send a message through Discord API
@@ -42,9 +42,9 @@ discord = Discord()
 class Bot(commands.Bot):
     def __init__(self) -> None:
         super().__init__(
-            token="w9vi4afzpgejsrpzyhapeagl4p6dj9",
+            token="TWITCH_TOKEN",
             prefix="?",
-            initial_channels=["juratt"]
+            initial_channels=["CHANNEL_NAME"]
         )
 
     async def event_ready(self):
