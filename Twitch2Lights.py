@@ -1,16 +1,10 @@
-import json
 import twitchio
-import requests
 
 from twitchio.ext import commands, pubsub
 from tuyapy import TuyaApi
 from tuyapy.devices.light import TuyaLight
 
 from constants import(
-    DISCORD_TOKEN,
-    API_URL,
-    CHANNEL_ID,
-    
     TWITCH_TOKEN,
     CHANNEL,
 
@@ -32,38 +26,6 @@ light: TuyaLight = api.get_all_devices()[0]
 light.turn_on()
 light.set_brightness(255)
 
-class Discord():
-    async def send_message(self, message: str) -> requests.request:
-        """Send a message through Discord API
-
-        Args:
-            message (str): Message to be sent to CHANNEL_ID
-
-        Returns:
-            requests.request: Returns the request sent to Discord API
-        """
-        url = f"{API_URL}/channels/{CHANNEL_ID}/messages"
-        
-        headers = {
-            "Authorization": f"Bot {DISCORD_TOKEN}",
-            "Content-Type": "application/json"
-        }
-
-        payload = {
-            "content": message
-        }
-
-        request = requests.post(
-            url,
-            json=payload,
-            headers=headers
-        )
-        print(request)
-        return request
-
-discord = Discord()
-
-
 class Bot(commands.Bot):
     def __init__(self) -> None:
         super().__init__(
@@ -84,11 +46,6 @@ class Bot(commands.Bot):
 
     async def event_ready(self):
         print(f"[   READY   ]: {self.nick}")
-
-    async def event_message(self, message: twitchio.Message) -> None:
-        message = f"[{message.author.name}]: {message.content}"
-
-        await discord.send_message(message)
 
     async def event_pubsub_channel_points(self, event: pubsub.PubSubChannelPointsMessage):
         print("asd")
