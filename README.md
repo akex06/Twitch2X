@@ -40,8 +40,7 @@ Open `constants.py` and change the values of the variables
   CHANNEL = ["CHANNEL_NAME"]
 
   #   LIGHTBULB
-  #   SMART LIFE / TUYA
-
+  #   SMART LIFE / Tuya
 
   USERNAME = "email"
   PASSWORD = "password"
