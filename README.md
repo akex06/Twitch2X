@@ -1,6 +1,3 @@
-# Twitch2Discord
-A simple script that sends messages from Twitch Channel to Discord Channel
-
 ### Prerequisites
 ## LINUX
 * python3 pip3
@@ -17,6 +14,11 @@ A simple script that sends messages from Twitch Channel to Discord Channel
   ```sh
   Go to https://python.org/downloads/ and install latest python version
   ```
+
+# Twitch2X
+A simple script that sends messages from Twitch Channel to Discord Channel
+
+
 * ```sh
   pip install requests
   pip install twitchio
