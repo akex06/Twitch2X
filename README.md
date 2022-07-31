@@ -27,7 +27,7 @@ Open `constants.py` and change the values of the variables
   #   DISCORD
 
   #   CAN BE FOUND IN https://discord.com/developers
-  DISCORD_TOKEN = TOKEN"
+  DISCORD_TOKEN = "TOKEN"
   API_URL = "https://discord.com/api"
   #   DISCORD CHANNEL WHERE MESSAGES WILL BE SEND
   CHANNEL_ID = 000000000000000000
