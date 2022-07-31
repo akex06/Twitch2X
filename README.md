@@ -16,7 +16,17 @@
   ```
 
 # Twitch2X
+Python scripts for connecting Twitch to other stuff
+
+# Twitch2Discord
 A simple script that sends messages from Twitch Channel to Discord Channel
+
+# Twitch2Light
+A simple script that uses channel point redeems for lighting up a smart lighbulb (needs to be compatible with Tuya or Smart Life app)
+
+* ```sh
+  pip install tuyapy
+```
 
 
 * ```sh
